@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body{
+  font-family:Raleway;
+  overflow: hidden;
+}
+*{
+    text-decoration: none;
+}
+@media  (min-width: 700px) and (max-width:990px) {
+
+}
+@media  (min-width: 1000px) and (max-width:1500px) {
+.logo-img{
+    width: 200px!important;
+    height: 100px!important;
+}
+}
+.sidenav{
+    background-color: #53010c;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+}
+.body-header{
+    background-color: #53010c;
+    height: 70px;
+}
+.body-body{
+    background-color: yellow;
+    overflow-y: scroll;
+}
+.sidenav-tabs-first{
+    height: 70px;
+    background-color:#9e0317;
+    margin-top: 70px;
+    color: white;
+}
+.sidenav-tabs-first:hover {
+    background-color: #6c0311;
+}
+.sidenav-tabs:hover {
+    background-color: #6c0311;
+}
+.sidenav-tabs{
+    height: 70px;
+    background-color:#9e0317;
+    margin-top: 15px;
+    color: white;
+}
+.Sidenav-powered-by{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.logo-img{
+    width: 250px;
+    height: 120px;
+}
+.content-side{
+    position: fixed;
+    right: 0;
+}
+.user-menu-custom-btn {
+    color: #53010c;
+    background-color: #ffffff;
+    border-color: #6c757d;
+    height: 70px;
+    width: 100%;
+    border-radius: 0!important;
+}
+.user-menu-custom-btn:hover{
+    color: #fff;
+    background-color: #53010c;
+    border-color: #581313; 
+}
+.user-menu-custom-btn:focus{
+    color: #fff;
+    background-color: #53010c;
+    border-color: #581313; 
+    box-shadow: none;
+}
+.imagecolorinvert{
+    filter: invert(100%);
+}
+.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #53010c;
+    border-color: #53010c;
+}
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+
+}
+.show>.btn-secondary.dropdown-toggle:focus #user-profile-img{
+    filter: invert(100%);
+}
+.user-menu-custom-btn:hover #user-profile-img{
+    filter: invert(100%);
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    color: #fff;
+    background-color: #53010c;
+    border-color: #53010c;
+}
+.dropdown-menu {
+    min-width: 15rem!important;
+    border-radius: 0!important; 
+    padding: 0!important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #53010c;
+}
+a:hover {
+    text-decoration: none;
+}
