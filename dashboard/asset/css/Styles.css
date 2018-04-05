@@ -43,7 +43,6 @@ h5{
     height: 70px;
 }
 .body-body{
-    background-color: yellow;
     overflow-y: scroll;
 }
 .sidenav-tabs-first{
@@ -136,4 +135,31 @@ h5{
 }
 a:hover {
     text-decoration: none;
+}
+
+
+
+.form-container{
+    padding-top: 2%;
+}
+.form-control {
+    border-radius: 0rem!important;
+}
+.custom-select {
+    border-radius: 0rem!important;
+}
+.custom-file-label {
+    border-radius: 0rem!important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ED1C24!important;
+    border-color: #ED1C24!important;
+}
+.btn-primary:hover{
+    background-color: rgb(167, 19, 38)!important;
+    border-color: rgb(167, 19, 38)!important;
+}
+.invalid-feedback {
+   color: #ff0505!important;
 }

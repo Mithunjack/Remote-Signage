@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remote Signage</title>
+    <!-- Adding Favicon -->
+    <link rel="icon" href="asset/images/favicon.png" type="image/png" sizes="15x15">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/Styles.css">
+
+  </head>
+  <body>
+
+      <section class="Container-fluid">
+          <div class="row justify-content-center no-gutters">
+              <div class="col-lg-2 col-md-3 sidenav">
+                      <a href="#"> 
+                        <div class="row sidenav-tabs-first align-items-center justify-content-center no-gutters">
+                          <div class="col-lg-10 col-md-10 ">
+                            <h5>Dashboard</h5>
+                          </div>  
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                          <div class="col-lg-10 col-md-10 ">
+                            <h5>Casting</h5>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Playlist</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Screen Groups</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Layouts</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Content Manager</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Scheduler</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Admin</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <div class="row Sidenav-powered-by"> 
+                            <img src="asset/images/Digitallogo.svg" class="logo-img">
+                      </div>
+              </div>
+              <div class="col-lg-10 col-md-9 content-side">
+                  <div class="row no-gutters body-header">
+                      <div class="col-lg-10 col-md-10">
+                        
+                      </div>
+                      <div class="col-lg-2 col-md-2" style="background-color: white;">
+                          <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle user-menu-custom-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Username  <img src="asset/images/user-icon.png" style="width: 50px;padding: 0 2%;filter: invert(100%);" id="user-profile-img">
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><h5>My Profile</h5></a>
+                                <a class="dropdown-item" href="#"><h5>Subscription</h5></a>
+                                <a class="dropdown-item" href="#"><h5>Billing</h5></a>
+                                <a class="dropdown-item" href="#"><h5>Log Out</h5></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row no-gutters body-body">
+                          <div class="col-lg-12 col-md-12">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs nav-font" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active " data-toggle="tab" href="#addMem" >ADD Members</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link " data-toggle="tab" href="#permission">Permissions</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link " data-toggle="tab" href="#user">User Logs</a>
+                                      </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                      <div id="addMem" class="container tab-pane tab-style active">
+                                          <div class="row justify-content-center" style="padding-top: 80px;">
+                                            <div class="col-lg-8 col-md-8">
+                                              <div class="form-container ">
+                                                  <form class="needs-validation" novalidate>
+                                                      <div class="form-row" style="padding: 3% 0">
+                                                        <div class=" col-lg-6 col-md-6">
+                                                          <label for="validationCustom01" style="color: #53010c;">First name*</label>
+                                                          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                                          <div class="invalid-feedback">
+                                                            Please Provide First Name.
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 ">
+                                                          <label for="validationCustom02" style="color: #53010c;">Last name*</label>
+                                                          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                                                          <div class="invalid-feedback">
+                                                            Please Provide Last Name.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class=" col-lg-12 col-md-12">
+                                                           <label for="validationCustom05" style="color: #53010c;">Email*</label>
+                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Email" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide an Email.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class=" col-lg-12 col-md-12">
+                                                           <label for="validationCustom05" style="color: #53010c;">Password*</label>
+                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Password" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide an Password.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class=" col-lg-12 col-md-12">
+                                                          <label for="validationCustom03" style="color: #53010c;">Retype Password*</label>
+                                                          <input type="text" class="form-control" id="validationCustom01" placeholder="Retype Password" required>
+                                                          <div class="invalid-feedback">
+                                                            Please Provide Password.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class="col-lg-6 col-md-6">
+                                                          <label for="validationCustom07" style="color: #53010c;">Mobile*</label>
+                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Mobile" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide Mobile.
+                                                          </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                           <label for="validationCustom05" style="color: #53010c;">Select Role*</label>
+                                                           <select class="custom-select" placeholder="City" required>
+                                                            <option value="">Open this select menu</option>
+                                                            <option value="1">Dhaka</option>
+                                                            <option value="2">Ctg</option>
+                                                            <option value="3">Comilla</option>
+                                                          </select>
+                                                          <div class="invalid-feedback">Please Select any Role</div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class="col-lg-12 col-md-12">
+                                                          <label for="validationCustom07" style="color: #53010c;">Address*</label>
+                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide an Adress.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class="col-lg-12 col-md-12">
+                                                          <label for="validationCustom07" style="color: #53010c;">Address*</label>
+                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide an Adress.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class="col-lg-12 col-md-12">
+                                                          <label for="validationCustom07" style="color: #53010c;">Address*</label>
+                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide an Adress.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                        <div class="col-lg-12 col-md-12">
+                                                          <label for="validationCustom07" style="color: #53010c;">Address*</label>
+                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide an Adress.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="form-group" style="padding-bottom: 4%">
+                                                        <div class="form-check">
+                                                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                          <label class="form-check-label" for="invalidCheck" style="color: #53010c;">
+                                                            I Agree to <a href="#">terms and conditions</a>
+                                                          </label>
+                                                          <div class="invalid-feedback">
+                                                            You must agree before submitting.
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <button class="btn btn-primary justify-content-center" type="submit" style="margin-bottom: 2%;">Add Member</button>
+                                                  </form>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div id="permission" class="container tab-pane tab-style">
+                                        
+                                      </div>
+                                      <div id="user" class="container tab-pane tab-style">
+                                        
+                                      </div>  
+                                   </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </section> 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script type="text/javascript">
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>  
+</html>
