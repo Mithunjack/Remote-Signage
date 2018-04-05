@@ -225,3 +225,51 @@ a:hover {
 .nav-link {
     padding: 1.5rem 12rem;
 }
+
+
+/*permission css*/
+.icons-size{
+    width: 25px;
+    margin: 0 10px;
+}
+.icons-size-search{
+    width: 35px;
+    margin: 0 20px;
+}
+.table td, .table th {
+    padding: .8rem!important;
+    vertical-align: top!important;
+    border: 1.5px solid #53010c!important;
+}
+.table thead th {
+    vertical-align: bottom;
+}
+
+.enjoy-css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 10px 20px;
+  border: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 60%;
+}
+
+.enjoy-css:focus {
+    border:none;
+    outline: none;
+}
+::placeholder{
+    color:#53010c!important;
+}
+select > option{
+    color:#53010c!important;   
+}
+::value{
+    color:#53010c!important;
+}
+select#none:focus {
+    background-color: white!important;
+}
