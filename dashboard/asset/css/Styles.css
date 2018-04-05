@@ -8,9 +8,26 @@ body{
     text-decoration: none;
 }
 @media  (min-width: 700px) and (max-width:990px) {
+.sidenav-tabs-first{
+    height: 50px!important;
+}
+h5{
+    font-size: 16px!important;
+}
+.sidenav-tabs{
+    height: 50px!important;
+    margin-top: 5px!important;
+}
 .logo-img{
     width: 150px!important;
     height: 100px!important;
+}
+.nav-link {
+    padding: .5rem 2rem!important;
+}
+.custom-nav {
+    height: 50px!important;
+    width: 192px!important;
 }
 }
 @media  (min-width: 1000px) and (max-width:1500px) {
@@ -31,7 +48,17 @@ h5{
 .Sidenav-powered-by{
     left: 20%!important;
 }
+.nav-link {
+    padding: 0.5rem 9rem!important;
 }
+.custom-nav {
+    height: 50px!important;
+    width: 400px!important;
+}
+}
+
+
+
 .sidenav{
     background-color: #53010c;
     min-height: 100vh;
@@ -43,7 +70,7 @@ h5{
     height: 70px;
 }
 .body-body{
-    overflow-y: scroll;
+
 }
 .sidenav-tabs-first{
     height: 70px;
@@ -190,4 +217,11 @@ a:hover {
 .custom-select:focus {
     border-color: #53010c!important;
     box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 5px rgb(83, 1, 12)!important;
+}
+.custom-nav{
+    height: 70px;
+    width: 533px;
+}
+.nav-link {
+    padding: 1.5rem 12rem;
 }
