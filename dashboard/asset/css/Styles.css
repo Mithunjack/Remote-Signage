@@ -49,11 +49,11 @@ h5{
     left: 20%!important;
 }
 .nav-link {
-    padding: 0.5rem 9rem!important;
+    padding: 0.5rem 8rem!important;
 }
 .custom-nav {
     height: 50px!important;
-    width: 400px!important;
+    width: 379px!important;
 }
 }
 
@@ -165,7 +165,7 @@ a:hover {
 }
 
 
-
+/*Admin-Add User CSS*/
 .form-container{
     padding-top: 2%;
 }
