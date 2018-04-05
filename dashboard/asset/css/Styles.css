@@ -8,7 +8,10 @@ body{
     text-decoration: none;
 }
 @media  (min-width: 700px) and (max-width:990px) {
-
+.logo-img{
+    width: 150px!important;
+    height: 100px!important;
+}
 }
 @media  (min-width: 1000px) and (max-width:1500px) {
 .logo-img{
@@ -75,22 +78,25 @@ h5{
     right: 0;
 }
 .user-menu-custom-btn {
-    color: #53010c;
-    background-color: #ffffff;
-    border-color: #6c757d;
+    color: #fff;
+    background-color: #53010c;
+    border-color: #53010c;
     height: 70px;
     width: 100%;
     border-radius: 0!important;
 }
 .user-menu-custom-btn:hover{
-    color: #fff;
-    background-color: #53010c;
-    border-color: #581313; 
+    color: black;
+    background-color: #fff;
+    border-color: #fff; 
+}
+.user-menu-custom-btn:hover #user-profile-img{
+    filter: none!important;
 }
 .user-menu-custom-btn:focus{
-    color: #fff;
-    background-color: #53010c;
-    border-color: #581313; 
+    color: black;
+    background-color: #fff;
+    border-color: #fff; 
     box-shadow: none;
 }
 .imagecolorinvert{
@@ -103,13 +109,15 @@ h5{
 }
 .show>.btn-secondary.dropdown-toggle:focus {
     box-shadow: none;
+    background-color: #ffff;
+    color: black;
 
 }
 .show>.btn-secondary.dropdown-toggle:focus #user-profile-img{
-    filter: invert(100%);
+    filter: none!important;
 }
-.user-menu-custom-btn:hover #user-profile-img{
-    filter: invert(100%);
+#user-profile-img:hover{
+    filter: none!important;
 }
 .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
     color: #fff;
