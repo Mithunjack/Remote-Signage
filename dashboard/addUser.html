@@ -115,64 +115,54 @@
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                       <div id="addMem" class="container tab-pane tab-style active">
-                                          <div class="row justify-content-center" style="padding-top: 80px;">
+                                          <div class="row justify-content-center" style="padding-top: 10px;">
                                             <div class="col-lg-8 col-md-8">
                                               <div class="form-container ">
                                                   <form class="needs-validation" novalidate>
                                                       <div class="form-row" style="padding: 3% 0">
                                                         <div class=" col-lg-6 col-md-6">
                                                           <label for="validationCustom01" style="color: #53010c;">First name*</label>
-                                                          <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                                          <input type="text" class="form-control" name="first_name" id="validationCustom01" placeholder="First name" required>
                                                           <div class="invalid-feedback">
                                                             Please Provide First Name.
                                                           </div>
                                                         </div>
                                                         <div class="col-lg-6 col-md-6 ">
                                                           <label for="validationCustom02" style="color: #53010c;">Last name*</label>
-                                                          <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                                                          <input type="text" class="form-control" name="last_name" id="validationCustom02" placeholder="Last name" required>
                                                           <div class="invalid-feedback">
                                                             Please Provide Last Name.
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
-                                                        <div class=" col-lg-12 col-md-12">
+                                                      <div class="form-row" style="padding-bottom: 2%">
+                                                        <div class=" col-lg-6 col-md-6">
                                                            <label for="validationCustom05" style="color: #53010c;">Email*</label>
-                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Email" required>
+                                                          <input type="text" class="form-control" name="email" id="validationCustom04" placeholder="Email" required>
                                                           <div class="invalid-feedback">
                                                             Please provide an Email.
                                                           </div>
                                                         </div>
-                                                      </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
-                                                        <div class=" col-lg-12 col-md-12">
-                                                           <label for="validationCustom05" style="color: #53010c;">Password*</label>
-                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Password" required>
-                                                          <div class="invalid-feedback">
-                                                            Please provide an Password.
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
-                                                        <div class=" col-lg-12 col-md-12">
-                                                          <label for="validationCustom03" style="color: #53010c;">Retype Password*</label>
-                                                          <input type="text" class="form-control" id="validationCustom01" placeholder="Retype Password" required>
-                                                          <div class="invalid-feedback">
-                                                            Please Provide Password.
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
                                                         <div class="col-lg-6 col-md-6">
                                                           <label for="validationCustom07" style="color: #53010c;">Mobile*</label>
-                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Mobile" required>
+                                                          <input type="text" class="form-control" name="mobile_no" id="validationCustom04" placeholder="Mobile" required>
                                                           <div class="invalid-feedback">
                                                             Please provide Mobile.
                                                           </div>
                                                         </div>
+                                                      </div>
+                                                      
+                                                      <div class="form-row" style="padding-bottom: 2%">             
+                                                        <div class="col-lg-6 col-md-6">
+                                                          <label for="validationCustom07" style="color: #53010c;">City*</label>
+                                                          <input type="text" class="form-control" name="city" id="validationCustom04" placeholder="City" required>
+                                                          <div class="invalid-feedback">
+                                                            Please provide City.
+                                                          </div>
+                                                        </div>
                                                         <div class="col-lg-6 col-md-6">
                                                            <label for="validationCustom05" style="color: #53010c;">Select Role*</label>
-                                                           <select class="custom-select" placeholder="City" required>
+                                                           <select class="custom-select" placeholder="City" name="role" required>
                                                             <option value="">Open this select menu</option>
                                                             <option value="1">Dhaka</option>
                                                             <option value="2">Ctg</option>
@@ -181,43 +171,16 @@
                                                           <div class="invalid-feedback">Please Select any Role</div>
                                                         </div>
                                                       </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
+                                                      <div class="form-row" style="padding-bottom: 2%">
                                                         <div class="col-lg-12 col-md-12">
                                                           <label for="validationCustom07" style="color: #53010c;">Address*</label>
-                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
+                                                          <input type="text" class="form-control" name="address" id="validationCustom04" placeholder="Adress" required>
                                                           <div class="invalid-feedback">
                                                             Please provide an Adress.
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
-                                                        <div class="col-lg-12 col-md-12">
-                                                          <label for="validationCustom07" style="color: #53010c;">Address*</label>
-                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
-                                                          <div class="invalid-feedback">
-                                                            Please provide an Adress.
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
-                                                        <div class="col-lg-12 col-md-12">
-                                                          <label for="validationCustom07" style="color: #53010c;">Address*</label>
-                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
-                                                          <div class="invalid-feedback">
-                                                            Please provide an Adress.
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div class="form-row" style="padding-bottom: 4%">
-                                                        <div class="col-lg-12 col-md-12">
-                                                          <label for="validationCustom07" style="color: #53010c;">Address*</label>
-                                                          <input type="text" class="form-control" id="validationCustom04" placeholder="Adress" required>
-                                                          <div class="invalid-feedback">
-                                                            Please provide an Adress.
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                      <div class="form-group" style="padding-bottom: 4%">
+                                                      <div class="form-group" style="padding-bottom: 1%">
                                                         <div class="form-check">
                                                           <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                                           <label class="form-check-label" for="invalidCheck" style="color: #53010c;">
@@ -229,6 +192,7 @@
                                                         </div>
                                                       </div>
                                                       <button class="btn btn-primary justify-content-center" type="submit" style="margin-bottom: 2%;">Add Member</button>
+                                                      <button class="btn btn-primary justify-content-center" type="submit" style="margin-bottom: 2%;margin-left: 2%;">Cancel</button>
                                                   </form>
                                               </div>
                                             </div>
