@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remote Signage-Role</title>
+    <!-- Adding Favicon -->
+    <link rel="icon" href="asset/images/favicon.png" type="image/png" sizes="15x15">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>  
+    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/Styles.css">
+
+  </head>
+  <body>
+
+      <section class="container-fluid">
+          <div class="row justify-content-center no-gutters">
+              <div class="col-lg-2 col-md-3 sidenav">
+                      <a href="#"> 
+                        <div class="row sidenav-tabs-first align-items-center justify-content-center no-gutters">
+                          <div class="col-lg-10 col-md-10 ">
+                            <h5>Dashboard</h5>
+                          </div>  
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                          <div class="col-lg-10 col-md-10 ">
+                            <h5>Casting</h5>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Playlist</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Screen Groups</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Layouts</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Content Manager</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Scheduler</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <a href="#">
+                          <div class="row sidenav-tabs align-items-center justify-content-center no-gutters">
+                            <div class="col-lg-10 col-md-10">
+                              <h5>Admin</h5>
+                            </div>
+                          </div>
+                      </a>
+                      <div class="row Sidenav-powered-by"> 
+                            <img src="asset/images/Digitallogo.svg" class="logo-img">
+                      </div>
+              </div>
+              <div class="col-lg-10 col-md-9 content-side">
+                  <div class="row no-gutters body-header">
+                      <div class="col-lg-10 col-md-10">
+                        
+                      </div>
+                      <div class="col-lg-2 col-md-2" style="background-color: white;">
+                          <div class="dropdown">
+                              <button class="btn btn-secondary dropdown-toggle user-menu-custom-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Username  <img src="asset/images/user-icon.png" style="width: 50px;padding: 0 2%;filter: invert(100%);" id="user-profile-img">
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><h5>My Profile</h5></a>
+                                <a class="dropdown-item" href="#"><h5>Subscription</h5></a>
+                                <a class="dropdown-item" href="#"><h5>Billing</h5></a>
+                                <a class="dropdown-item" href="#"><h5>Log Out</h5></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row no-gutters body-body justify-content-center">
+                       <div class="col-md-12 col-lg-12">
+                           <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-4" style="padding: 5% 0">
+                                    <div class="form-row">             
+                                        <div class="col-lg-12 col-md-12">
+                                          <input type="text" class="form-control validationCustomRole" name="role" id="validationCustom04" placeholder="Role Name" required>
+                                        </div>
+                                    </div>        
+                                </div>
+                           </div>
+                           <div class="row justify-content-center">
+                                <div class="col-lg-1 col-md-2">
+                                  <h4 style="color:#53010c;">Permissions</h4>
+                                </div>  
+                           </div>
+                           <div class="row justify-content-center check-All">
+                                <div class="col-lg-10 col-md-10">
+                                  <div class="row justify-content-left">
+                                      <div class="form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="checkbox"><span class="check-text">Check All</span>
+                                        </label>
+                                      </div>
+                                  </div>
+                                </div>  
+                           </div>
+                           <div class="row justify-content-center">
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row justify-content-center" style="padding-bottom: 30px;">
+                                               <div class="col-md-10 col-lg-10 custom-cards">
+                                                  <h4 style="color:white;text-align: center;">Sigange Manager</h4>
+                                               </div>
+                                               <div class="col-md-10 col-lg-10 custom-cards-body">
+                                                  <div class="row justify-content-center">
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                           <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Read</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Write</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"> <span class="check-text">Delete</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>  
+                                                  </div>
+                                               </div>
+                                            </div>                               
+                                        </div>
+                                         
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row justify-content-center" style="padding-bottom: 30px;">
+                                               <div class="col-md-10 col-lg-10 custom-cards">
+                                                  <h4 style="color:white;text-align: center;">Sigange Manager</h4>
+                                               </div>
+                                               <div class="col-md-10 col-lg-10 custom-cards-body">
+                                                  <div class="row justify-content-center">
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                           <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Read</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Write</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"> <span class="check-text">Delete</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>  
+                                                  </div>
+                                               </div>
+                                            </div>                               
+                                        </div>
+                                        
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row justify-content-center" style="padding-bottom: 30px;">
+                                               <div class="col-md-10 col-lg-10 custom-cards">
+                                                  <h4 style="color:white;text-align: center;">Sigange Manager</h4>
+                                               </div>
+                                               <div class="col-md-10 col-lg-10 custom-cards-body">
+                                                  <div class="row justify-content-center">
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                           <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Read</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Write</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"> <span class="check-text">Delete</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>  
+                                                  </div>
+                                               </div>
+                                            </div>                               
+                                        </div> 
+
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row justify-content-center" style="padding-bottom: 30px;">
+                                               <div class="col-md-10 col-lg-10 custom-cards">
+                                                  <h4 style="color:white;text-align: center;">Sigange Manager</h4>
+                                               </div>
+                                               <div class="col-md-10 col-lg-10 custom-cards-body">
+                                                  <div class="row justify-content-center">
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                           <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Read</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Write</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"> <span class="check-text">Delete</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>  
+                                                  </div>
+                                               </div>
+                                            </div>                               
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row justify-content-center" style="padding-bottom: 30px;">
+                                               <div class="col-md-10 col-lg-10 custom-cards">
+                                                  <h4 style="color:white;text-align: center;">Sigange Manager</h4>
+                                               </div>
+                                               <div class="col-md-10 col-lg-10 custom-cards-body">
+                                                  <div class="row justify-content-center">
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                           <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Read</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Write</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"> <span class="check-text">Delete</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>  
+                                                  </div>
+                                               </div>
+                                            </div>                               
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="row justify-content-center" style="padding-bottom: 30px;">
+                                               <div class="col-md-10 col-lg-10 custom-cards">
+                                                  <h4 style="color:white;text-align: center;">Sigange Manager</h4>
+                                               </div>
+                                               <div class="col-md-10 col-lg-10 custom-cards-body">
+                                                  <div class="row justify-content-center">
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                           <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Read</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"><span class="check-text">Write</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-lg-4 col-md-4" style="padding: 20px;">
+                                                            <div class="form-check">
+                                                              <label class="form-check-label">
+                                                                <input class="form-check-input" type="checkbox"> <span class="check-text">Delete</span>
+                                                              </label>
+                                                            </div>
+                                                      </div>  
+                                                  </div>
+                                               </div>
+                                            </div>                               
+                                        </div>
+
+                                        <button class="btn btn-primary justify-content-center custom-btn" type="submit" style="margin: 2% 0%;">Create</button>
+                                        <button class="btn btn-primary justify-content-center custom-btn" type="submit" style="margin: 2% 0%;margin-left: 2%;">Cancel</button>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                  </div>
+              </div>
+          </div>
+      </section> 
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script type="text/javascript">
+      
+    </script>
+  </body>  
+</html>

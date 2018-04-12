@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 body{
   font-family:Raleway;
-  overflow: hidden;
+/*  overflow: hidden;*/
 }
 *{
     text-decoration: none;
@@ -16,7 +16,7 @@ h5{
 }
 .sidenav-tabs{
     height: 50px!important;
-    margin-top: 5px!important;
+    margin-top:2px!important;
 }
 .logo-img{
     width: 150px!important;
@@ -38,25 +38,67 @@ h5{
 h5{
     font-size: 18px!important;
 }
+h6{
+    font-size: 15px!important;
+}
+.h4, h4 {
+    font-size: 1.2rem!important;
+}
 .sidenav-tabs-first{
     height: 50px!important;
 }
 .sidenav-tabs{
     height: 50px!important;
-    margin-top: 5px!important;
+    margin-top: 2px!important;
 }
 .Sidenav-powered-by{
     left: 20%!important;
 }
 .nav-link {
-    padding: 0.5rem 8rem!important;
+    padding: 0.4rem 5rem!important;
 }
 .custom-nav {
+    height: 40px!important;
+    width: 284px!important;
+}
+input[type=checkbox] {
+    transform: scale(1.2)!important;
+    margin-top: 5px!important;
+}
+.check-text{
+    font-size: 15px!important;
+}
+.custom-cards {
+    padding: 10px!important;
+}
+.check-All{
+    margin-left: 15px!important;
+}
+.custom-btn {
+    width: 130px!important;
     height: 50px!important;
-    width: 379px!important;
+}
+.icons-size-content {
+    width: 20px!important;
+    margin: 0 2px!important;
+}
+.listViewSearch {
+    margin: 50px 0px 0px!important;
+    padding: 2px!important;
+}
+.content-upload-btn{
+    padding: .5rem!important;
+}
+.icons-size-upload{
+    width: 30px!important;
+    margin: 0 15px!important;
 }
 }
-
+@media  (min-width: 1900px) and (max-width:2500px) {
+    ::-webkit-scrollbar { 
+    display: none; 
+}
+}
 
 
 .sidenav{
@@ -70,7 +112,9 @@ h5{
     height: 70px;
 }
 .body-body{
-
+   overflow-y: scroll;
+   margin-bottom: 100px;
+   height: calc(100vh - 70px);
 }
 .sidenav-tabs-first{
     height: 70px;
@@ -87,7 +131,7 @@ h5{
 .sidenav-tabs{
     height: 70px;
     background-color:#9e0317;
-    margin-top: 10px;
+    margin-top: 2px;
     color: white;
 }
 .Sidenav-powered-by{
@@ -220,10 +264,10 @@ a:hover {
 }
 .custom-nav{
     height: 70px;
-    width: 533px;
+    width: 400px;
 }
 .nav-link {
-    padding: 1.5rem 12rem;
+    padding: 1.4rem 8.5rem;
 }
 
 
@@ -263,6 +307,7 @@ a:hover {
 }
 ::placeholder{
     color:#53010c!important;
+    font-size: 14px!important;
 }
 select > option{
     color:#53010c!important;   
@@ -272,4 +317,95 @@ select > option{
 }
 select#none:focus {
     background-color: white!important;
+}
+
+.validationCustomRole{
+    height: 55px!important;
+}
+.custom-cards {
+    background-color: #53010c;
+    padding: 20px;
+    margin: 30px 30px 0px 30px;
+}
+.custom-cards-body{
+    border: 2px solid #53010c
+}
+input[type=checkbox] {
+    transform: scale(1.8);
+    color: #53010c;
+    margin-top: 10px;
+}
+.check-text{
+    color:#53010c;
+    font-size: 22px;
+}
+.check-All{
+    margin-left: 30px;
+}
+.custom-btn{
+    width: 150px;
+    height: 60px;
+}
+.create-role{
+    border: 1px solid #53010c;
+    margin: 60px 0 40px 0;
+    padding: 15px;
+}
+.create-role-name{
+    border: 1px solid #53010c;
+    margin: 15px 10px;
+    padding: 10px;
+}
+.create-role-name  h6{
+    color: #53010c!important;
+}
+.font-color{
+    color: #53010c;
+}
+.custom-editrole-cards{
+    background-color: #53010c;
+    padding: 10px;
+}
+.editRole-header{
+    border: 2px solid #53010c;
+    background-color: white;
+    padding: 5px;
+    margin: 50px 0 50px 0;
+}
+.list-group-item {
+    border: 1px solid rgb(83, 1, 12)!important;
+}
+.listViewSearch{
+    border: 1px solid #53010c;
+    border-bottom: 0px;
+    margin: 80px 0px 0px;
+    padding: 5px;
+}
+.listViewComponent{
+    border: 2px solid #53010c;
+    margin: 30px auto;
+}
+.custom-select-list{
+    border-radius: 0rem!important;
+    border: none!important;
+}
+.custom-selct-list:focus{
+    box-shadow: none!important;
+}
+.border-bottom {
+    border-bottom: 2px solid #66010f!important;
+}
+.border-left {
+    border-left: 2px solid #53010c!important;
+}
+.icons-size-content{
+    width: 22px;
+    margin: 0 8px; 
+}
+.content-upload-btn{
+    padding: 1rem;
+}
+.icons-size-upload{
+    width: 35px;
+    margin: 0 20px;
 }
