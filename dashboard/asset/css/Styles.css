@@ -409,3 +409,23 @@ input[type=checkbox] {
     width: 35px;
     margin: 0 20px;
 }
+.page-item.active .page-link {
+    background-color: #53010c!important;
+    border-color: #53010c!important;
+    color: white;
+}
+.page-link {
+    color: #53010c;
+    border: 1px solid #53010c80;
+}
+.page-link:hover {
+    color: white!important;
+    background-color: #53010c;
+    border-color: #53010c;
+}
+.active>.page-link{
+    color: white!important;
+}
+.page-link:focus {
+   box-shadow: 0 0 0 0.2rem rgba(132, 2, 20, 0.4);
+}
